@@ -1,0 +1,157 @@
+.hero-section {
+    padding: 80px 0;
+    background-color: #f1f6ff; /* Soft light blue background */
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content { flex: 1.2; }
+
+.blue-text { color: #007bff; }
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #1a2b4b; /* Navy color */
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 40px;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+/* Feature List Styling */
+.hero-features {
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.check-icon {
+    color: #007bff;
+    background: white;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    font-size: 12px;
+}
+
+/* Registration Form Card */
+.hero-form-wrapper { flex: 0.8; }
+
+.registration-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 123, 255, 0.1);
+    border: 1px solid #f0f4f8;
+}
+
+.form-category {
+    font-size: 12px;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a2b4b;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 15px;
+    background-color: #f8faff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #64748b;
+    outline: none;
+    
+    /* CRITICAL FIX: Removes the default browser arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-wrapper { position: relative; }
+
+.select-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    pointer-events: none; /* Allows click to pass through to the select box */
+    font-size: 18px;
+}
+
+.btn-apply {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-apply:hover { background-color: #0069d9; }
+
+.btn-primary-large {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .hero-content h1 { font-size: 42px; }
+    .hero-content p { margin: 0 auto 30px; }
+    .feature-item { justify-content: center; }
+}

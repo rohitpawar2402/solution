@@ -1,0 +1,142 @@
+/* Container and Section Spacing */
+.why-partner-section {
+  padding: 20px 0;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.why-partner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* Required 80px horizontal padding */
+  padding: 0 80px;
+}
+
+/* --- Left Side Content --- */
+.why-partner-content {
+  flex: 1;
+}
+
+.about-pill-wrapper {
+  margin-bottom: 24px;
+}
+
+.about-pill {
+  background-color: #f0f7ff;
+  color: #1877f2;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.why-partner-heading {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1a2b4b; /* Deep Navy */
+  line-height: 1.2;
+  margin-bottom: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.why-partner-description {
+  font-size: 18px;
+  color: #64748b; /* Slate Gray */
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+/* Action Buttons Group */
+.why-partner-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn-explore {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 14px 38px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-explore:hover {
+  background-color: #1565c0;
+}
+
+.btn-get-started {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  color: #1a2b4b;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.play-icon-container {
+  background-color: #ff6b4a; /* Orange/Red Play Button */
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.play-icon-small {
+  font-size: 10px;
+  margin-left: 2px; /* Centers the triangle visually */
+}
+
+/* --- Right Side Illustration --- */
+.why-partner-image-wrapper {
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-illustration-img {
+  width: 100%;
+  max-width: 620px;
+  border-radius: 24px;
+  /* Subtle shadow as seen in UI mockups */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+  .why-partner-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 40px;
+    gap: 50px;
+  }
+
+  .why-partner-actions {
+    justify-content: center;
+  }
+
+  .why-partner-image-wrapper {
+    justify-content: center;
+  }
+
+  .why-partner-heading {
+    font-size: 32px;
+  }
+}

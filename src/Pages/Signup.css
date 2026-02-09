@@ -1,0 +1,148 @@
+.signup-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: white;
+}
+
+.signup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a3c;
+}
+
+.logo {
+  height: 45px;
+}
+
+.field-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.req {
+  color: #ff4d4d;
+  margin-left: 2px;
+}
+
+.field-group input, .dropdown {
+  padding: 12px 15px;
+  background-color: #f8fbff;
+  border: 1px solid #eef2f8;
+  border-radius: 20px; /* Highly rounded as per image */
+  font-size: 14px;
+  outline: none;
+}
+
+.relative-pos {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 36px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.phone-row {
+  display: flex;
+  gap: 10px;
+}
+
+.code-box {
+  width: 60px;
+  text-align: center;
+}
+
+.phone-box {
+  flex: 1;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #1a8cff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #cbd5e0;
+}
+
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.separator span {
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.google-btn {
+  width: 100%;
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.google-btn img {
+  width: 18px;
+}
+
+.login-prompt {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #718096;
+}
+
+.login-prompt a {
+  color: #1a8cff;
+  text-decoration: none;
+  font-weight: 600;
+}

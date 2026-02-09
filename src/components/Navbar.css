@@ -1,0 +1,131 @@
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: white;
+    position: relative; 
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .navbar-container {
+    max-width: 1250px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 60px; 
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+  
+  .nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #1A1A1A;
+    cursor: pointer;
+    position: relative; 
+    padding: 10px 0; 
+  }
+  
+  .nav-links a { text-decoration: none; color: inherit; }
+  .dropdown-parent span { display: flex; align-items: center; gap: 5px; }
+  
+  /* --- DROPDOWN BOX COMMON STYLES --- */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); 
+    border-radius: 8px;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 999;
+    min-width: 250px;
+    border-top: 3px solid #1877F2; 
+  }
+  
+ 
+  .dropdown-parent:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+ 
+  .dropdown-menu ul { list-style: none; padding: 0; }
+  .dropdown-menu li {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap; 
+  }
+  .dropdown-menu li:hover { color: #1877F2; background: #f9f9f9; padding-left: 5px; border-radius: 4px; }
+  
+  /* --- SPECIFIC MENUS --- */
+  
+  /* 1. Services Menu (Wide, 3 Columns) */
+  .services-menu {
+    left: -200px; 
+    width: 900px; 
+  }
+  .dropdown-row { display: flex; gap: 40px; }
+  .dropdown-col h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1A1A1A;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  /* 2. Sector Menu (Icons) */
+  .sector-menu { width: 280px; }
+  .menu-icon { color: #1877F2; font-size: 16px; }
+  
+  /* 3. Innovation Menu (Title + Desc) */
+  .innovation-menu { width: 300px; }
+  .innovation-menu li { display: block; padding: 10px 0; }
+  .innovation-menu strong { display: block; color: #1A1A1A; font-size: 15px; }
+  .innovation-menu p { font-size: 12px; color: #888; margin-top: 2px; }
+  
+  /* 4. Sustainability Menu (Green Icons) */
+  .sustainability-menu { width: 250px; }
+  .menu-icon.green { color: #28a745; }
+  
+  /* --- BUTTON --- */
+  .btn-primary {
+    background-color: #1877F2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+  }

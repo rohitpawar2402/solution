@@ -1,0 +1,78 @@
+.carbon-section {
+  width: 100%;
+  padding: 60px 35px; /* Matching your 80px side margins */
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.carbon-hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carbon-bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  min-height: 600px; /* Ensures the image remains large */
+}
+
+/* Positioning the text directly on the right side of the image */
+.carbon-text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%; /* Keeps text on the right half */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the text */
+  padding-right: 60px; /* Space from the right edge */
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.carbon-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff; /* Solid black font */
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.carbon-paragraph {
+  font-size: 17px;
+  font-weight: 500; /* Slightly medium weight for better readability */
+  color: #ece8e8; /* Solid black font */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .carbon-text-overlay {
+    width: 55%;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carbon-section {
+    padding: 20px;
+  }
+  
+  .carbon-text-overlay {
+    position: static; /* Stack text below image on small mobile screens */
+    width: 100%;
+    padding: 30px 0;
+  }
+  
+  .carbon-title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,61 @@
+.features-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.header h1 {
+  color: #1e293b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #f0f7ff;
+  border-radius: 15px;
+  padding: 40px 20px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.icon-wrapper {
+  background: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  color: #2563eb; /* This sets the color of the SVG icons */
+}
+
+.icon-wrapper svg {
+  width: 35px;
+  height: 35px;
+}
+
+.feature-card h3 {
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}

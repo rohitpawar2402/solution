@@ -1,0 +1,127 @@
+.impact-page-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Impact Grid Styling */
+.impact-section {
+  /* Strictly 80px side padding */
+  padding: 0px 45px; 
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.impact-main-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+}
+
+.impact-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.impact-icon-box {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.impact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.impact-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #007bff;
+  margin: 0 0 5px 0;
+}
+
+.impact-card-desc {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+}
+
+/* CTA Banner Styling */
+.cta-banner {
+  background-color: #f1f1f1;
+  /* UPDATED: Strictly 80px side padding to match the top section */
+  padding: 60px 80px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cta-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.cta-subtext {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+}
+
+.cta-right {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-filled {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #1e90ff;
+  padding: 12px 25px;
+  border: 1px solid #1e90ff;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .impact-section, .cta-banner {
+    padding: 40px 20px; /* Reduced padding for mobile screens */
+  }
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}

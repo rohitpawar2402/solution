@@ -1,0 +1,62 @@
+:root {
+  --primary-blue: #1877F2; /* Design wala blue */
+  --primary-red: #FF3B30;  /* Design wala red */
+  --dark-text: #1A1A1A;
+  --light-text: #666666;
+  --bg-light: #F8F9FB;
+  --max-width: 1200px; /* Website ki width */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* Google font */
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Purana .container code hata kar ye likhein */
+.container {
+  max-width: 1205px; /* Pehle ye fixed width tha, ab max-width hai */
+  width: 90%;        /* Mobile me side me thodi jagah chhodega */
+  margin: 0 auto;    /* Beech me layega */
+}
+
+
+h1, h2, h3 { color: var(--dark-text); }
+p { color: var(--light-text); line-height: 1.6; }
+
+/* Global Button Style */
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-blue);
+  padding: 11px 27px;
+  border-radius: 50px;
+  border: 1px solid var(--primary-blue);
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+
+/* Ye magic code hai - Mobile ke liye */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Mobile me thoda aur fail jayega */
+    padding: 0 10px;
+  }
+}

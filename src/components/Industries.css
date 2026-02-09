@@ -1,0 +1,107 @@
+.industries-section {
+  padding: 30px 0;
+  background: white;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* Updated to match your specific requirements */
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+.section-desc {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.compliance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+}
+
+.compliance-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.icon-box-squircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a2b4b;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.apply-now {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.explore-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.btn-explore-blue {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .compliance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  .compliance-grid {
+    grid-template-columns: 1fr;
+  }
+}

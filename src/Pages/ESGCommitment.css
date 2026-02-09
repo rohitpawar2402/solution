@@ -1,0 +1,92 @@
+.esg-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.esg-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* Strictly matching the 80px side margins of your Hero section */
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  box-sizing: border-box;
+}
+
+/* Text Side Styling */
+.esg-text-side {
+  flex: 1;
+}
+
+.esg-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.esg-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+/* Image Side Styling */
+.esg-image-side {
+  flex: 1.2;
+  display: flex;
+  gap: 20px;
+}
+
+.esg-main-image-wrapper {
+  flex: 1;
+}
+
+.esg-img-large {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.esg-secondary-images {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.esg-img-small {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments for mobile/tablet */
+@media (max-width: 992px) {
+  .esg-container {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 40px;
+  }
+  
+  .esg-text-side {
+    text-align: center;
+  }
+  
+  .esg-description {
+    max-width: 100%;
+  }
+
+  .esg-image-side {
+    width: 100%;
+  }
+}

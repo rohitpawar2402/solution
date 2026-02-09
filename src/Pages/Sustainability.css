@@ -1,0 +1,122 @@
+/* Container with 80px side margins */
+.image-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px 80px; 
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+/* Hero Wrapper */
+.hero-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 0; /* Ensures no extra space at bottom of image */
+}
+
+.custom-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Text Overlay */
+.hero-overlay-text {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.text-green { color: #22c55e; }
+.text-dark { color: #1f2937; }
+.text-light-dark { color: #4b5563; }
+
+.hero-subtext {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* --- FEATURE BLOCKS: Gap Reduced --- */
+.feature-blocks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 0; /* Reduced top/bottom padding to minimize gap */
+  width: 100%;
+  margin-top: -70px; /* Fine-tuned adjustment to pull section up */
+}
+
+.feature-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  border-right: 1px solid #e2e8f0; 
+}
+
+.feature-block.no-border {
+  border-right: none;
+}
+
+.feature-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0056b3; 
+  margin-bottom: 8px;
+}
+
+.feature-info {
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-container {
+    padding: 20px 20px;
+  }
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .feature-blocks-container {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .feature-block {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,99 @@
+/* Container and Typography */
+.circular-section {
+  width: 100%;
+  padding: 60px 0px;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.circular-container {
+  /* UPDATED: Changed from max-width 1200px to ensure 80px side spacing on large screens */
+  max-width: 1440px; 
+  margin: 0 auto;
+  /* UPDATED: Added the strict 80px padding on Left and Right */
+  padding: 0 20px; 
+  box-sizing: border-box;
+}
+
+.circular-main-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.circular-intro {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+  /* Removed max-width to allow text to follow the 80px container flow, 
+     or you can keep it at 1000px if you want the text narrower than the cards */
+  max-width: 1000px;
+  margin-bottom: 40px;
+}
+
+.circular-sub-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+/* Green Delivery Cards */
+.delivery-grid {
+  display: grid;
+  /* Adjusted minmax slightly to ensure 4 columns fit well with 80px side margins */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.delivery-card {
+  background-color: #72bf44; 
+  padding: 30px;
+  border-radius: 12px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.delivery-card:hover {
+  transform: translateY(-5px);
+}
+
+.delivery-icon-container {
+  margin-bottom: 20px;
+}
+
+.delivery-icon {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.delivery-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.delivery-card-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .circular-container {
+    /* Reduce side margins for mobile devices */
+    padding: 0 20px;
+  }
+  .circular-main-title {
+    font-size: 28px;
+  }
+  .delivery-grid {
+    grid-template-columns: 1fr;
+  }
+}
