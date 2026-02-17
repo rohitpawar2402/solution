@@ -16,6 +16,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Testimonials from './components/Testimonials';
 import Login from './Pages/Signup';
 import ServiceDetail from './components/ServiceDetail';
+import AllServices from './components/AllServices';
 
 
 // Separate Page for Sustainability
@@ -50,6 +51,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/service/:serviceId" element={<ServiceDetail />} />
+          <Route path="/services" element={<AllServices />} />
           
          
           <Route path="/sustainability" element={<SustainableLogistics/>} />

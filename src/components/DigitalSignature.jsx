@@ -29,10 +29,10 @@ const DigitalSignature = () => {
 
         {/* Pricing Info */}
         <div className="dsc-pricing">
-          <p className="price-text">Delivery Price: <span className="highlight-red">INR 500/- (+ GST)</span></p>
+          <p className="price-text">Delivery Price: <span className="highlight-red">INR 500/- <span style={{ color: 'black' }}>(+ GST)</span></span></p>
           <p className="note-text">*Note: Receipt fees (tentatively INR 2,500 per year) will be payable at actual after completing the video verification.</p>
           
-          <p className="delivery-text">Delivery Period: <span className="highlight-red">Two to three Working Days</span></p>
+          <p className="delivery-text">Delivery Period: <span className="highlight-black">Two to Three Working Days</span></p>
           <p className="note-text">*All Documents should be in PDF Format with Clear Image Passport size Photo in JPG Only.</p>
         </div>
 

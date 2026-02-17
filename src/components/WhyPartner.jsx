@@ -1,6 +1,6 @@
 import React from 'react';
 import './WhyPartner.css';
-import { FaPlay } from 'react-icons/fa';
+
 // Import the local image from your assets folder
 import aboutIllustration from '../assets/Aboutus.png'; 
 
@@ -25,15 +25,7 @@ const WhyPartner = () => {
             we handle it all—so you can focus on growth.
           </p>
           
-          <div className="why-partner-actions">
-            <button className="btn-explore">Explore</button>
-            <button className="btn-get-started">
-              <span className="play-icon-container">
-                <FaPlay className="play-icon-small" />
-              </span>
-              Get Started
-            </button>
-          </div>
+
         </div>
 
         <div className="why-partner-image-wrapper">

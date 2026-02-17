@@ -52,57 +52,7 @@
   margin-bottom: 40px;
 }
 
-/* Action Buttons Group */
-.why-partner-actions {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
 
-.btn-explore {
-  background-color: #1877f2;
-  color: white;
-  border: none;
-  padding: 14px 38px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn-explore:hover {
-  background-color: #1565c0;
-}
-
-.btn-get-started {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background: none;
-  border: none;
-  color: #1a2b4b;
-  font-weight: 700;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 0;
-}
-
-.play-icon-container {
-  background-color: #ff6b4a; /* Orange/Red Play Button */
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.play-icon-small {
-  font-size: 10px;
-  margin-left: 2px; /* Centers the triangle visually */
-}
 
 /* --- Right Side Illustration --- */
 .why-partner-image-wrapper {
@@ -128,9 +78,7 @@
     gap: 50px;
   }
 
-  .why-partner-actions {
-    justify-content: center;
-  }
+
 
   .why-partner-image-wrapper {
     justify-content: center;

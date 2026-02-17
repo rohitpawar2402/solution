@@ -1,66 +1,76 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   FaCar, FaStore, FaShoppingCart, FaHospital, 
   FaIndustry, FaMicrochip, FaBolt, FaArrowRight, FaGlobe 
 } from 'react-icons/fa';
 import { 
   MdKeyboardDoubleArrowRight, MdOutlineDirectionsBoat, 
-  MdOutlineAirplanemodeActive, MdAssignment 
+  MdOutlineAirplanemodeActive, MdAssignment, MdImportExport 
 } from "react-icons/md";
 import { HiOutlineIdentification } from "react-icons/hi2";
 import { FiMonitor } from "react-icons/fi";
+import { FaPlay, FaPassport, FaFileContract, FaRegistered } from "react-icons/fa";
+import { TbCertificate } from "react-icons/tb";
 import './Industries.css';
 
 const Industries = () => {
   // Service data for the Import-Export section based on your provided images
+  // Service data for the Import-Export section based on your provided images
   const importExportServices = [
     {
       id: 1,
-      title: "Import/Export Code (IEC)",
-      desc: "Get 10-digit IEC for import/export",
-      icon: <MdOutlineAirplanemodeActive />,
-      bgColor: "#fff1eb", // Soft Peach
-      iconColor: "#ff8a5c"
+      title: "First Step to Start Business",
+      desc: "Initial guidance for new exporters/importers",
+      icon: <FaPlay />,
+      bgColor: "#eef2ff", // Soft Blue
+      iconColor: "#6366f1",
+      slug: "first-step-export-import"
     },
     {
       id: 2,
-      title: "Export/Import Registration",
-      desc: "RCMC & required trade registrations",
-      icon: <MdOutlineDirectionsBoat />,
-      bgColor: "#eef2ff", // Soft Blue
-      iconColor: "#6366f1"
+      title: "Basic Registration",
+      desc: "Essential registrations to start business",
+      icon: <FaPassport />,
+      bgColor: "#fffbeb", // Soft Yellow
+      iconColor: "#f59e0b",
+      slug: "basic-export-import-registration"
     },
     {
       id: 3,
-      title: "RCMC Registration",
-      desc: "Export promotion council registration",
-      icon: <MdAssignment />,
-      bgColor: "#fffbeb", // Soft Yellow
-      iconColor: "#f59e0b"
+      title: "First Time Registration",
+      desc: "Setup for first-time exporters/importers",
+      icon: <MdImportExport />,
+      bgColor: "#fff1eb", // Soft Peach
+      iconColor: "#ff8a5c",
+      slug: "first-time-export-import-registration"
     },
     {
       id: 4,
-      title: "DGFT Services",
-      desc: "DGFT-related services support",
-      icon: <FaGlobe />,
-      bgColor: "#fff1eb", 
-      iconColor: "#ff8a5c"
+      title: "Letter of Undertaking (LUT)",
+      desc: "LUT for export without payment of IGST",
+      icon: <FaFileContract />,
+      bgColor: "#eef2ff", 
+      iconColor: "#6366f1",
+      slug: "letter-of-undertaking"
     },
     {
       id: 5,
-      title: "ICEGATE Registration",
-      desc: "Online customs filing & clearance",
-      icon: <HiOutlineIdentification />,
-      bgColor: "#eef2ff", 
-      iconColor: "#6366f1"
+      title: "REX System",
+      desc: "Registered Exporter System registration",
+      icon: <FaRegistered />,
+      bgColor: "#fffbeb", 
+      iconColor: "#f59e0b",
+      slug: "rex-registration"
     },
     {
       id: 6,
-      title: "TAN Registrations",
-      desc: "TAN registration for TDS compliance",
-      icon: <FiMonitor />,
-      bgColor: "#fffbeb", 
-      iconColor: "#f59e0b"
+      title: "Certificate of Origin (CoO)",
+      desc: "Proof of origin for exported goods",
+      icon: <TbCertificate />,
+      bgColor: "#fff1eb", 
+      iconColor: "#ff8a5c",
+      slug: "certificate-of-origin"
     }
   ];
 
@@ -92,17 +102,17 @@ const Industries = () => {
               </div>
               <h3 className="card-title">{service.title}</h3>
               <p className="card-desc">{service.desc}</p>
-              <a href="#" className="apply-now">
+              <Link to={`/service/${service.slug}`} className="apply-now">
                 Apply now <MdKeyboardDoubleArrowRight className="arrow-icon" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
         
         <div className="explore-btn-wrapper">
-           <button className="btn-explore-blue">
+           <Link to="/services" className="btn-explore-blue">
              Explore all <FaArrowRight />
-           </button>
+           </Link>
         </div>
 
         

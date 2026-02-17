@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import { 
   MdKeyboardDoubleArrowRight, 
-  MdOutlineSecurity, 
-  MdOutlineGridView, 
-  MdOutlineStars,
-  MdLanguage,
-  MdOutlineBadge,
-  MdOutlineLaptopMac 
+  MdCurrencyExchange, 
+  MdOutlinePolicy,
+  MdOutlineInventory,
+  MdOutlineLocalShipping 
 } from "react-icons/md";
+import { FaHandHoldingUsd, FaFileInvoiceDollar, FaTools, FaFileContract, FaRegistered } from "react-icons/fa";
+import { RiGovernmentFill } from "react-icons/ri";
 // Ensure this filename matches your physical file in src/components/
 import "./Innovation.css"; 
 
@@ -16,51 +17,57 @@ const Innovation = () => {
   const techServices = [
     {
       id: 1,
-      title: "AEO Certification",
-      desc: "Trusted trader status with customs benefits.",
-      icon: <MdOutlineSecurity />,
-      bgColor: "#fff1eb", // Soft Orange
-      iconColor: "#ff8a5c"
+      title: "Export Incentives Advisory",
+      desc: "Maximize benefits from government schemes",
+      icon: <FaHandHoldingUsd />,
+      bgColor: "#eef2ff", // Soft Blue
+      iconColor: "#6366f1",
+      slug: "export-incentives-advisory"
     },
     {
       id: 2,
-      title: "Trade Portal Subscription",
-      desc: "Annual access to export-import compliance portals.",
-      icon: <MdOutlineGridView />,
-      bgColor: "#eef2ff", // Soft Blue
-      iconColor: "#6366f1"
+      title: "RoDTEP Refund",
+      desc: "Refund of Duties and Taxes on Exported Products",
+      icon: <FaFileInvoiceDollar />,
+      bgColor: "#fffbeb", // Soft Yellow
+      iconColor: "#f59e0b",
+      slug: "rodtep-refund"
     },
     {
       id: 3,
-      title: "Star Export House",
-      desc: "Recognition for high-performing exporters.",
-      icon: <MdOutlineStars />,
-      bgColor: "#fffbeb", // Soft Yellow
-      iconColor: "#f59e0b"
+      title: "EPCG Scheme",
+      desc: "Export Promotion Capital Goods scheme",
+      icon: <FaTools />,
+      bgColor: "#fff1eb", // Soft Orange
+      iconColor: "#ff8a5c",
+      slug: "epcg-scheme"
     },
     {
       id: 4,
-      title: "EXIM Process Outsourcing",
-      desc: "Complete export-import operations managed for you.",
-      icon: <MdLanguage />,
-      bgColor: "#fff1eb", 
-      iconColor: "#ff8a5c"
+      title: "Advance Authorisation",
+      desc: "Duty-free import of inputs for export",
+      icon: <FaFileContract />,
+      bgColor: "#eef2ff", 
+      iconColor: "#6366f1",
+      slug: "advance-authorisation"
     },
     {
       id: 5,
-      title: "Foreign Exchange Management",
-      desc: "Compliant foreign exchange and RBI regulations support.",
-      icon: <MdOutlineBadge />,
-      bgColor: "#eef2ff", 
-      iconColor: "#6366f1"
+      title: "Duty Drawback (DBK)",
+      desc: "Refund of custom duties paid on inputs",
+      icon: <RiGovernmentFill />,
+      bgColor: "#fffbeb", 
+      iconColor: "#f59e0b",
+      slug: "duty-drawback-refund"
     },
     {
       id: 6,
-      title: "Logistics & Clearance",
-      desc: "End-to-end freight and customs handling.",
-      icon: <MdOutlineLaptopMac />,
-      bgColor: "#fffbeb", 
-      iconColor: "#f59e0b"
+      title: "Star Export House",
+      desc: "Status certification for exporters",
+      icon: <FaRegistered />,
+      bgColor: "#fff1eb", 
+      iconColor: "#ff8a5c",
+      slug: "star-export-house"
     }
   ];
 
@@ -81,17 +88,17 @@ const Innovation = () => {
               </div>
               <h3 className="card-title">{service.title}</h3>
               <p className="card-desc">{service.desc}</p>
-              <a href="#" className="apply-now-link">
+              <Link to={`/service/${service.slug}`} className="apply-now-link">
                 Apply now <MdKeyboardDoubleArrowRight className="arrow-icon" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
         
         <div className="explore-btn-wrapper">
-           <button className="btn-explore-blue">
+           <Link to="/services" className="btn-explore-blue">
              Explore all <FaArrowRight />
-           </button>
+           </Link>
         </div>
       </div>
     </section>
